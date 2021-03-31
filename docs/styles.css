@@ -1,16 +1,24 @@
 body {
     text-align: center;
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, #7ddb95, #c7bb8b);
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 50px 10px;
 }
 
 iframe {
     width: 560px;
     height: 315px;
+}
+
+.ques {
+    font-size: 18px;
 }
 
 /* HIDE RADIO */
@@ -24,7 +32,6 @@ iframe {
 /* IMAGE STYLES */
 [type=radio] + img {
     cursor: pointer;
-    padding: 5px 5px 5px 5px;
 }
 
 /* CHECKED STYLES */

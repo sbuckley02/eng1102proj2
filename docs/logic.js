@@ -31,7 +31,7 @@ function updatePage() {
             setQuestAns(main, stateObj);
             break;
         case "results":
-            setMessage(main, stateObj);
+            setResults(main, stateObj);
             break;
         case "video":
             setVideo(main, stateObj);
@@ -51,7 +51,8 @@ function setMessage(main, stateObj) {
 }
 
 function setQuestAns(main, stateObj) {
-    let ques = document.createElement("h3");
+    let ques = document.createElement("p");
+    ques.setAttribute("class", "ques");
     ques.innerHTML = stateObj.question;
     main.appendChild(ques);
 
@@ -96,6 +97,17 @@ function setQuestAns(main, stateObj) {
         }
     }
     main.appendChild(table);
+}
+
+function setResults(main, stateObj) {
+    let introMessage = document.createElement("p");
+    introMessage.innerHTML = stateObj.message1;
+    // Code to show results here
+    let outroMessage = document.createElement("p");
+    outroMessage.innerHTML = stateObj.message2;
+
+    main.appendChild(introMessage);
+    main.appendChild(outroMessage);
 }
 
 function setVideo(main, stateObj) {

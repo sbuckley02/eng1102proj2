@@ -54,12 +54,13 @@ let states = [
     },
     {
         "type": "results",
-        "message": "Here are your results!",
+        "message1": "Here we will show the results of the quiz, as calculated by your answer choices.",
+        "message2": "To learn more about this topic, continue to watch a crash course video on unethically-produced goods and products.",
         "btnText": "Go to Video"
     },
     {
         "type": "video",
-        "message": "Here's the video",
+        "message": "Below will be our crash-course style video about unethically-produced goods. For now, enjoy this:",
         "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "btnText": "Next"
     },
