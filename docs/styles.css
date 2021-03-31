@@ -2,3 +2,32 @@ body {
     text-align: center;
     background-image: linear-gradient(to right, red , yellow);
 }
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #000;
+}

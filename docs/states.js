@@ -1,33 +1,28 @@
 let states = [
     {
         "type": "message",
-        "message": "Welcome! Go to the quiz pls",
-        "btnText": "Next"
-    },
-    {
-        "type": "message",
-        "message": "This is a quiz. You will take a quiz.",
+        "message": "If you've taken BuzzFeed quizzes before, you may know what Hogwarts house you belong to or what kind of Pop Tart you are. Now, get ready for the real question: what unethically-produced product are you? Are you a tasty chocolate bar? Are you a stylish garment? There's only one way to find out!",
         "btnText": "Take Quiz"
     },
     {
         "type": "question",
-        "question": "What is your favorite number?",
+        "question": "In which part of the world would you want to be unethically produced in?",
         "answers": [
             {
-                "name": "23",
-                "image": "23image"
+                "name": "China",
+                "url": "china.jpg"
             },
             {
-                "name": "44",
-                "image": "44image"
+                "name": "Brazil",
+                "url": "brazil.jpg"
             },
             {
-                "name": "65,536",
-                "image": "65536image"
+                "name": "United States",
+                "url": "unitedstates.png"
             },
             {
-                "name": "1",
-                "image": "1image"
+                "name": "South Africa",
+                "url": "southafrica.jpg"
             }
         ],
         "checked": null,
@@ -35,47 +30,23 @@ let states = [
     },
     {
         "type": "question",
-        "question": "What is your favorite animal?",
+        "question": "What form of underpaid labor, or labor with inhumane conditions, would you want to expoit?",
         "answers": [
             {
-                "name": "Bear",
-                "image": "bearimage"
+                "name": "Child labor",
+                "url": "childlabor.jpg"
             },
             {
-                "name": "Sheep",
-                "image": "sheepimage"
+                "name": "Prison labor",
+                "url": "prisonlabor.jpg"
             },
             {
-                "name": "Koala",
-                "image": "koalaimage"
+                "name": "General labor",
+                "url": "generallabor.jpg"
             },
             {
-                "name": "Otter",
-                "image": "otterimage"
-            }
-        ],
-        "checked": null,
-        "btnText": "Next Question"
-    },
-    {
-        "type": "question",
-        "question": "Who is the best?",
-        "answers": [
-            {
-                "name": "Me",
-                "image": "imageofme"
-            },
-            {
-                "name": "You",
-                "image": "imageofyou"
-            },
-            {
-                "name": "Everyone, not including me and you",
-                "image": "peopleimage"
-            },
-            {
-                "name": "Both me and you",
-                "image": "usimage"
+                "name": "Any labor, as long as it's unjust",
+                "url": "labor.jpg"
             }
         ],
         "checked": null,
@@ -89,6 +60,7 @@ let states = [
     {
         "type": "video",
         "message": "Here's the video",
-        "btnText": "idk"
+        "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "btnText": "Next"
     },
 ];

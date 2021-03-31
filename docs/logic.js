@@ -34,11 +34,14 @@ function updatePage() {
             setMessage(main, stateObj);
             break;
         case "video":
-            setMessage(main, stateObj);
+            setVideo(main, stateObj);
             break;
     }
+    let bBtn = document.getElementById("backwardBtn");
     let fBtn = document.getElementById("forwardBtn");
     fBtn.innerHTML = stateObj.btnText;
+    fBtn.disabled = state == (states.length - 1);
+    bBtn.disabled = state == 0;
 }
 
 function setMessage(main, stateObj) {
@@ -53,28 +56,55 @@ function setQuestAns(main, stateObj) {
     main.appendChild(ques);
 
     let answers = stateObj.answers;
+    let table = document.createElement("table");
+
+    let imgRow, txtRow;
     for (let i = 0; i < answers.length; i++) {
-        let ansBlock = document.createElement("div");
-        ansBlock.setAttribute("class", "form-check");
-        let ansInp = document.createElement("input");
-        ansInp.setAttribute("class", "form-check-input");
-        ansInp.setAttribute("type", "radio");
-        ansInp.setAttribute("name", "answerRadio");
-        ansInp.setAttribute("id", "ans" + i);
-        ansInp.setAttribute("value", i);
-        if (stateObj.checked != null && parseInt(stateObj.checked) == i) {
-            ansInp.setAttribute("checked", true);
+        if (i % 2 == 0) {
+            imgRow = document.createElement("tr");
+            txtRow = document.createElement("tr");
         }
 
-        let ansLabel = document.createElement("label");
-        ansLabel.setAttribute("class", "form-check-label");
-        ansLabel.setAttribute("for", "ans" + i);
-        ansLabel.innerHTML = answers[i].name;
+        let lbl = document.createElement("label");
+        let inp = document.createElement("input");
+        inp.setAttribute("type", "radio");
+        inp.setAttribute("name", "answerRadio");
+        inp.setAttribute("id", "ans" + i);
+        if (stateObj.checked != null && parseInt(stateObj.checked) == i) {
+            inp.setAttribute("checked", true);
+        }
 
-        ansBlock.appendChild(ansInp);
-        ansBlock.appendChild(ansLabel);
-        main.appendChild(ansBlock);
+        let img = document.createElement("img");
+        img.setAttribute("src", "images/" + answers[i].url);
+        img.setAttribute("width", "200");
+        let txt = document.createElement("div");
+        txt.innerHTML = answers[i].name;
+
+        lbl.appendChild(inp);
+        lbl.appendChild(img);
+
+        let butContainer = document.createElement("th");
+        let txtContainer = document.createElement("th");
+        butContainer.appendChild(lbl);
+        txtContainer.appendChild(txt);
+        imgRow.appendChild(butContainer);
+        txtRow.appendChild(txtContainer);
+
+        if (i % 2 == 1) {
+            table.appendChild(imgRow);
+            table.appendChild(txtRow);
+        }
     }
+    main.appendChild(table);
+}
+
+function setVideo(main, stateObj) {
+    let introMessage = document.createElement("p");
+    introMessage.innerHTML = stateObj.message;
+    let vid = document.createElement("iframe");
+    vid.setAttribute("src", stateObj.url);
+    main.appendChild(introMessage);
+    main.appendChild(vid);
 }
 
 function updateAnswer() {
