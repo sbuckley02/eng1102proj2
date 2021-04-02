@@ -62,6 +62,11 @@ let states = [
         "type": "video",
         "message": "Below will be our crash-course style video about unethically-produced goods. For now, enjoy this:",
         "url": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1",
-        "btnText": "Next"
+        "btnText": "Learn More"
     },
+    {
+        "type": "message",
+        "message": "Here will be some links and resources for people to learn more about unethically-produced goods and to help out.",
+        "btnText": "Next"
+    }
 ];
