@@ -135,7 +135,7 @@ let states = [
                 }
             },
             {
-                "name": "Phillipines",
+                "name": "Philippines",
                 "url": "Philippines.jpg",
                 "values": {
                     "seafood": 1,
@@ -258,7 +258,7 @@ let states = [
                 }
             },
             {
-                "name": "Bangledesh",
+                "name": "Bangladesh",
                 "url": "Bangladesh.jpg",
                 "values": {
                     "toy": 1
@@ -304,16 +304,8 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Minimalism or maximalism?",
+        "question": "The age-old question: minimalism or maximalism?",
         "answers": [
-            {
-                "name": "Maximalism",
-                "url": "Yes.jpg",
-                "values": {
-                    "carpet": 1,
-                    "glove": 1
-                }
-            },
             {
                 "name": "Minimalism",
                 "url": "No.jpg",
@@ -321,6 +313,14 @@ let states = [
                     "footwear": 1,
                     "salt": 1,
                     "toy": 1
+                }
+            },
+            {
+                "name": "Maximalism",
+                "url": "Yes.jpg",
+                "values": {
+                    "carpet": 1,
+                    "glove": 1
                 }
             }
         ],
