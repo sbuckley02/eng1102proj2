@@ -6,7 +6,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "In which categories lies your true passions?",
+        "question": "In which category lies your true passions?",
         "answers": [
             {
                 "name": "Clothing",
