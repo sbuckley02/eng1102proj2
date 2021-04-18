@@ -45,6 +45,9 @@ function updatePage() {
         case "video":
             setVideo(main, stateObj);
             break;
+        case "links":
+            setLinks(main, stateObj);
+            break;
     }
     let bBtn = document.getElementById("backwardBtn");
     let fBtn = document.getElementById("forwardBtn");
@@ -211,6 +214,35 @@ function updateAnswer() {
         }
     }
     return false;
+}
+
+function setLinks(main, stateObj) {
+    let title = document.createElement("h5");
+    title.setAttribute("class", "ques");
+    title.innerHTML = "Links and Resources";
+
+    let text = document.createElement("p");
+    text.innerHTML = stateObj.message;
+
+    main.appendChild(title);
+    main.appendChild(text);
+
+    let links = stateObj.links;
+    for (let link of links) {
+        let linkTitle = document.createElement("div");
+        linkTitle.innerHTML = link.title;
+        linkTitle.setAttribute("class", "linkTitle");
+        let linkFormat = document.createElement("a");
+        linkFormat.setAttribute("href", link.link);
+        linkFormat.innerHTML = link.link;
+        linkFormat.setAttribute("target", "_blank");
+        let linkDesc = document.createElement("p");
+        linkDesc.innerHTML = link.description;
+        
+        main.appendChild(linkTitle);
+        main.appendChild(linkFormat);
+        main.appendChild(linkDesc);
+    }
 }
 
 updatePage();

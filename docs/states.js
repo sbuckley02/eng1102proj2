@@ -360,7 +360,7 @@ let states = [
     },
     {
         "type": "results",
-        "message": "Now that you know a little bit about the exploitation of cheap labor, check out our crash-course style video explaining how this labor is seen in many of the products we use on a daily basis!",
+        "message": "All metaphors and subtle jokes aside, you may be wondering, \"How are goods like these actually unethically produced?\" To get an answer to that question, check out our crash-course style video explaining how unethical labor is seen in many of the products we use on a daily basis!",
         "btnText": "Go to Video"
     },
     {
@@ -371,8 +371,25 @@ let states = [
         "btnText": "Learn More"
     },
     {
-        "type": "message",
-        "message": "Here will be some links and resources for people to learn more about unethically-produced goods and to help out.",
+        "type": "links",
+        "message": "Here are some links and resources you can use to identify and avoid unethically-produced products, as well as fighting against unethical labor.",
+        "links": [
+            {
+                "title": "List of Goods Produced by Child Labor or Forced Labor",
+                "link": "https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods",
+                "description": "This list, made by the U.S. Department of Labor, contains a list of goods produced by either child labor or some form of forced, unethical labor. For each of these goods, it gives information on where and how the goods are unethically produced."
+            },
+            {
+                "title": "Fair Trade Certified Products",
+                "link": "https://www.fairtradecertified.org/products?gclid=CjwKCAjwjuqDBhAGEiwAdX2cj22OdXAEAG3R7GlSocSJgvatchljH-xgVDnOYAgSfxNDPMZtPMzz8BoCaYkQAvD_BwE",
+                "description": "In this link, you can find products that are fair trade certified and are good alternatives to ones produced with cheap labor."
+            },
+            {
+                "title": "B Corp Certfication Products",
+                "link": "https://bcorporation.net/directory",
+                "description": "In this link, you can find products that are B Corp certified. You can search through industries and countries."
+            }
+        ],
         "btnText": "Next"
     }
 ];

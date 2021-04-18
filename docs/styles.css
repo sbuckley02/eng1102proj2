@@ -27,6 +27,10 @@ iframe {
     height: 315px;
 }
 
+.linkTitle {
+    font-weight: bold;
+}
+
 .btn-secondary {
     background-color: #001b6b !important;
 }
