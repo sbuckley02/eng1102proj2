@@ -35,7 +35,7 @@ let answers = {
         "points": 0
     },
     "coffee": {
-        "name": "a coffee beans",
+        "name": "a coffee bean",
         "description": "Description for coffee beans",
         "points": 0
     },
@@ -75,7 +75,7 @@ let answers = {
         "points": 0
     },
     "glove": {
-        "name": "a glove",
+        "name": "a rubber glove",
         "description": "Description for gloves",
         "points": 0
     },

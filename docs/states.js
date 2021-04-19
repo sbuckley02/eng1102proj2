@@ -187,7 +187,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Hypothetically, society revertes to a hunter-gatherer food system. Are you growing a garden or raising animals?",
+        "question": "Hypothetically, society reverts to a hunter-gatherer food system. Are you growing a garden or raising animals?",
         "answers": [
             {
                 "name": "Grow a Garden",
@@ -423,6 +423,11 @@ let states = [
                 "title": "List of Sustainable Fashion Brands",
                 "link": "https://www.thegoodtrade.com/features/fair-trade-clothing",
                 "description": "This list includes 35 ethical and sustainable fashion brands that can be purchased from as alternatives to unethical fast fashion brands."
+            },
+            {
+                "title": "Goodweave",
+                "link": "https://goodweave.org",
+                "description": "Goodweave is a non-profit organization that is dedicated to ending child labor, particularly in the rug/carpet industry. A donation to them is a donation to help end child labor."
             }
         ],
         "btnText": "Next"
