@@ -26,15 +26,40 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Would you rather buy many small items or one item?",
+        "question": "Which place would you explore in your dreams (but not in reality because you don't have that kind of motivation)?",
         "answers": [
             {
-                "name": "Many Small Items",
-                "url": "labor.jpg"
+                "name": "The Caribbeans",
+                "url": "Caribbeans.jpg",
+                "values": {
+                    "hm": 1,
+                    "zara": 2
+                }
             },
             {
-                "name": "One Large Item",
-                "url": "labor.jpg"
+                "name": "South Korea",
+                "url": "Korea.jpg",
+                "values": {
+                    "uniqlo": 4
+                }
+            },
+            {
+                "name": "Bangladesh",
+                "url": "Bangladesh.jpg",
+                "values": {
+                    "hm": 2,
+                    "zara": 2,
+                    "lulu": 3
+                }
+            },
+            {
+                "name": "China",
+                "url": "China.jpg",
+                "values": {
+                    "shein": 3,
+                    "gap": 1,
+                    "lulu": 1
+                }
             }
         ],
         "checked": null,
@@ -42,23 +67,25 @@ let states = [
     },
     {
         "type": "question",
-        "question": "ClothingQ2?",
+        "question": "Do you prefer simple or patterned objects?",
         "answers": [
             {
-                "name": "Ans1",
-                "url": "labor.jpg"
+                "name": "Simple",
+                "url": "Simplicity.jpg",
+                "values": {
+                    "hm": 1,
+                    "gap": 1,
+                    "lulu": 1,
+                    "uniqlo": 1
+                }
             },
             {
-                "name": "Ans2",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans3",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans4",
-                "url": "labor.jpg"
+                "name": "Patterned",
+                "url": "Patterned.jpg",
+                "values": {
+                    "shein": 1,
+                    "zara": 1
+                }
             }
         ],
         "checked": null,
@@ -66,23 +93,24 @@ let states = [
     },
     {
         "type": "question",
-        "question": "ClothingQ3?",
+        "question": "Which is more your vibe: luxury or comfort?",
         "answers": [
             {
-                "name": "Ans1",
-                "url": "labor.jpg"
+                "name": "Luxury",
+                "url": "Luxury.jpg",
+                "values": {
+                    "shein": 1,
+                    "zara": 1,
+                    "lulu": 1
+                }
             },
             {
-                "name": "Ans2",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans3",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans4",
-                "url": "labor.jpg"
+                "name": "Comfort",
+                "url": "Comfort.jpg",
+                "values": {
+                    "hm": 1,
+                    "gap": 1
+                }
             }
         ],
         "checked": null,
@@ -90,23 +118,25 @@ let states = [
     },
     {
         "type": "question",
-        "question": "ClothingQ4?",
+        "question": "Do you enjoy outdoor physical activities?",
         "answers": [
             {
-                "name": "Ans1",
-                "url": "labor.jpg"
+                "name": "Yes",
+                "url": "YesClothes.jpg",
+                "values": {
+                    "gap": 1,
+                    "lulu": 1,
+                    "uniqlo": 1
+                }
             },
             {
-                "name": "Ans2",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans3",
-                "url": "labor.jpg"
-            },
-            {
-                "name": "Ans4",
-                "url": "labor.jpg"
+                "name": "No",
+                "url": "NoClothes.jpg",
+                "values": {
+                    "shein": 1,
+                    "hm": 1,
+                    "zara": 1
+                }
             }
         ],
         "checked": null,
@@ -115,7 +145,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Which place have you always said you wanted to explore, but know deep-down it's not going to happen because you never actually wanted to explore there, you just liked the idea of it?",
+        "question": "Which place would you explore in your dreams (but not in reality because you don't have that kind of motivation)?",
         "answers": [
             {
                 "name": "Peru",
@@ -157,7 +187,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Hypothetically, we revert to the hunter-gatherer days and the only job is to ensure survival. Are you growing a garden or raising animals?",
+        "question": "Hypothetically, society revertes to a hunter-gatherer food system. Are you growing a garden or raising animals?",
         "answers": [
             {
                 "name": "Grow a Garden",
@@ -213,21 +243,21 @@ let states = [
         "question": "Which would you prefer: skiing in the winter or surfing in the summer?",
         "answers": [
             {
-                "name": "Surfing in the summer",
-                "url": "Hot.jpg",
-                "values": {
-                    "seafood": 1,
-                    "palm": 1
-                }
-            },
-            {
                 "name": "Skiing in the winter",
-                "url": "Cold.jpg",
+                "url": "winter.jpg",
                 "values": {
                     "coffee": 1,
                     "palm": 1,
                     "dairy": 1,
                     "chocolate": 1
+                }
+            },
+            {
+                "name": "Surfing in the summer",
+                "url": "summer.jpg",
+                "values": {
+                    "seafood": 1,
+                    "palm": 1
                 }
             }
         ],
@@ -237,7 +267,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Which place have you always said you wanted to explore, but know deep-down it's not going to happen because you never actually wanted to explore there, you just liked the idea of it?",
+        "question": "Which place would you explore in your dreams (but not in reality because you don't have that kind of motivation)?",
         "answers": [
             {
                 "name": "India",
@@ -304,7 +334,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "The age-old question: minimalism or maximalism?",
+        "question": "Minimalism or maximalism?",
         "answers": [
             {
                 "name": "Minimalism",
@@ -329,7 +359,7 @@ let states = [
     },
     {
         "type": "question",
-        "question": "How often do you clean your room/house? Be honest please.",
+        "question": "How often do you clean your room/house? Be honest.",
         "answers": [
             {
                 "name": "Everyday",
@@ -388,6 +418,11 @@ let states = [
                 "title": "B Corp Certfication Products",
                 "link": "https://bcorporation.net/directory",
                 "description": "In this link, you can find products that are B Corp certified. You can search through industries and countries."
+            },
+            {
+                "title": "List of Sustainable Fashion Brands",
+                "link": "https://www.thegoodtrade.com/features/fair-trade-clothing",
+                "description": "This list includes 35 ethical and sustainable fashion brands that can be purchased from as alternatives to unethical fast fashion brands."
             }
         ],
         "btnText": "Next"

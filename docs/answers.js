@@ -1,4 +1,34 @@
 let answers = {
+    "shein": {
+        "name": "Shein",
+        "description": "Description for shein",
+        "points": 0
+    },
+    "hm": {
+        "name": "H&M",
+        "description": "Description for H&M",
+        "points": 0
+    },
+    "zara": {
+        "name": "Zara",
+        "description": "Description for zara",
+        "points": 0
+    },
+    "gap": {
+        "name": "Gap",
+        "description": "Description for gap",
+        "points": 0
+    },
+    "lulu": {
+        "name": "Lululemon",
+        "description": "Description for Lululemon",
+        "points": 0
+    },
+    "uniqlo": {
+        "name": "Uniqlo",
+        "description": "Description for uniqlo",
+        "points": 0
+    },
     "seafood": {
         "name": "seafood",
         "description": "Description for seafood",
@@ -53,5 +83,5 @@ let answers = {
         "name": "a toy",
         "description": "Description for toys",
         "points": 0
-    },
+    }
 }

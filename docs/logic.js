@@ -58,6 +58,7 @@ function updatePage() {
 
 function setIntro(main, stateObj) {
     let text = document.createElement("p");
+    text.setAttribute("class", "introTxt");
     text.innerHTML = stateObj.message;
 
     let container = document.createElement("div");
@@ -229,18 +230,15 @@ function setLinks(main, stateObj) {
 
     let links = stateObj.links;
     for (let link of links) {
-        let linkTitle = document.createElement("div");
+        let linkTitle = document.createElement("a");
         linkTitle.innerHTML = link.title;
         linkTitle.setAttribute("class", "linkTitle");
-        let linkFormat = document.createElement("a");
-        linkFormat.setAttribute("href", link.link);
-        linkFormat.innerHTML = link.link;
-        linkFormat.setAttribute("target", "_blank");
+        linkTitle.setAttribute("href", link.link);
+        linkTitle.setAttribute("target", "_blank");
         let linkDesc = document.createElement("p");
         linkDesc.innerHTML = link.description;
         
         main.appendChild(linkTitle);
-        main.appendChild(linkFormat);
         main.appendChild(linkDesc);
     }
 }
