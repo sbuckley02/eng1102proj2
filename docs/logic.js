@@ -183,6 +183,10 @@ function setResults(main, stateObj) {
     let description = document.createElement("p");
     let descriptionTxt = answers[finalAnswer].description;
     description.innerHTML = descriptionTxt;
+    let note = document.createElement("p");
+    note.setAttribute("class", "note");
+    let noteTxt = answers[finalAnswer].note;
+    note.innerHTML = "Note: " + noteTxt;
     let outroMessage = document.createElement("p");
     outroMessage.innerHTML = stateObj.message;
 
@@ -190,17 +194,19 @@ function setResults(main, stateObj) {
     main.appendChild(message);
     main.appendChild(image);
     main.appendChild(description);
+    main.appendChild(note);
     main.appendChild(outroMessage);
 }
 
 function setVideo(main, stateObj) {
-    let introMessage = document.createElement("p");
-    introMessage.innerHTML = stateObj.message1;
+    let title = document.createElement("h5");
+    title.setAttribute("class", "ques");
+    title.innerHTML = stateObj.message1;
     let vid = document.createElement("iframe");
     vid.setAttribute("src", stateObj.url);
     let outroMessage = document.createElement("p");
     outroMessage.innerHTML = stateObj.message2;
-    main.appendChild(introMessage);
+    main.appendChild(title);
     main.appendChild(vid);
     main.appendChild(outroMessage);
 }

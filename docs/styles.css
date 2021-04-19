@@ -25,6 +25,7 @@ h2 {
 iframe {
     width: 560px;
     height: 315px;
+    padding-bottom: 15px;
 }
 
 .introTxt {
@@ -40,8 +41,14 @@ iframe {
 }
 
 .ansImage {
-    height: 30vh;
+    height: 28vh;
+    padding-top: 10px;
     padding-bottom: 15px;
+}
+
+.note {
+    font-style: italic;
+    font-size: 14px;
 }
 
 .result {

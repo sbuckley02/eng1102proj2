@@ -67,11 +67,11 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Do you prefer simple or patterned objects?",
+        "question": "Pick a wallpaper that adequately describes your life.",
         "answers": [
             {
-                "name": "Simple",
-                "url": "Simplicity.jpg",
+                "name": "",
+                "url": "simple.png",
                 "values": {
                     "hm": 1,
                     "gap": 1,
@@ -80,8 +80,8 @@ let states = [
                 }
             },
             {
-                "name": "Patterned",
-                "url": "Patterned.jpg",
+                "name": "",
+                "url": "patternBackground.jpg",
                 "values": {
                     "shein": 1,
                     "zara": 1
@@ -118,11 +118,11 @@ let states = [
     },
     {
         "type": "question",
-        "question": "Do you enjoy outdoor physical activities?",
+        "question": "You're hanging out with some friends. Some people decide to go outside and play a pickup basketball game. Everyone else stays inside and watches the Atlanta Hawks, an NBA team, play. What are you doing?",
         "answers": [
             {
-                "name": "Yes",
-                "url": "YesClothes.jpg",
+                "name": "Playing Basketball",
+                "url": "playing.jpg",
                 "values": {
                     "gap": 1,
                     "lulu": 1,
@@ -130,8 +130,8 @@ let states = [
                 }
             },
             {
-                "name": "No",
-                "url": "NoClothes.jpg",
+                "name": "Watching Basketball",
+                "url": "watching.jpg",
                 "values": {
                     "shein": 1,
                     "hm": 1,
@@ -390,7 +390,7 @@ let states = [
     },
     {
         "type": "results",
-        "message": "All metaphors and subtle jokes aside, you may be wondering, \"How are goods like these actually unethically produced?\" To get an answer to that question, check out our crash-course style video explaining how unethical labor is seen in many of the products we use on a daily basis!",
+        "message": "Now that you know a little bit about unethically-produced goods and how to avoid them, check out our introductory video on the topic by clicking the button below!",
         "btnText": "Go to Video"
     },
     {
