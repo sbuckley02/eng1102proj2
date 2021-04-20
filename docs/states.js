@@ -397,7 +397,7 @@ let states = [
         "type": "video",
         "message1": "Watch the video below!",
         "message2": "Once you've watched the video, check out the next page to see some links and resources to help you learn more about this topic and to identify/avoid brands that unethically exploit cheap labor.",
-        "url": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1",
+        "url": "https://drive.google.com/file/d/1WSmtyff9qjMB5EL7oZ-_T2NNWKAzdJ7s/preview",
         "btnText": "Learn More"
     },
     {
